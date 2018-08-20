@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DDash</string>
+    <string name="loading_data">Loading data...</string>
+    <string name="error_generic_message">Oops! There was an error fetching data. Please try again.</string>
+    <string name="error_home">Error obtaining result from server.</string>
+    <string name="error_exception">Error on fetching data: %s</string>
+    <string name="error_parsing">Error in parsing result from server</string>
+    <string name="error_network">Error obtaining result from server. Network Error code: %d</string>
+</resources>
