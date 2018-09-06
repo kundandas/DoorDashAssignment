@@ -7,6 +7,7 @@ public class Restaurant {
     String status;
     String coverImageUrl;
     String description;
+    boolean isLike;
 
     public String getId() {
         return id;
@@ -48,4 +49,11 @@ public class Restaurant {
         this.description = description;
     }
 
+    public boolean isLike() {
+        return isLike;
+    }
+
+    public void setLike(boolean like) {
+        isLike = like;
+    }
 }

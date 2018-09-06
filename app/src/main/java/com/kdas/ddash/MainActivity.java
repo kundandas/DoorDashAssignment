@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     int currentOffset = 0;
     int currentLimit = 50;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new RestaurantAdapter(restaurantList);
+        LikedRestaurantsSharedPreference sharedPreference = new LikedRestaurantsSharedPreference(this);
+        mAdapter = new RestaurantAdapter(restaurantList, sharedPreference);
         recyclerView.setAdapter(mAdapter);
 
         networkServiceProvider = new OkHTTPNetworkServiceProvider();
